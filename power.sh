@@ -1,10 +1,7 @@
-
 echo "Enter a Number"
 read n
-i=1
-
-while [ $i -le $n ]
+for (( i=1; i<=$n;i++ ))
 do
-          echo " $n x $i = $(( n * i ))"
-          i=$(( i + 1 ))
+        temp=$((2**i))
+	echo "2^n =$temp"  
 done
